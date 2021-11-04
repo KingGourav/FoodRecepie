@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Switch } from "react-router";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Navbar from "./Components/Navbar";
+
+import About from "./Pages/About";
+import Home from "./Pages/Home";
+import {ToastContainer} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+const App = () => {
+  return(<>
+
+<ToastContainer position="top-center"></ToastContainer>
+
+<Navbar />
+
+
+<Switch>
+  <Route exact path="/" component={Home}></Route>
+  <Route exact path="/about" component={About}></Route>
+
+</Switch>
+
+  </>)
 }
-
 export default App;

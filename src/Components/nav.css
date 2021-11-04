@@ -20,34 +20,29 @@
 
 *
 {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+	
 	font-family: 'Lato', sans-serif;
 }
 
-body
+.z
 {
-	-webkit-font-smoothing:antialiased;
-	background: #FAFAFA;
+    color: #fff !important;
+	text-decoration: none;
 }
-span{
-	background: #10D600 !important;
-	border: none !important;
-	color: #fff !important;
-	cursor: pointer;
-}
-input
+.active1
 {
-	padding: 0.8rem !important;
-	background: rgba(0,0,0,0.7)!important;
-	outline: none !important;
-	border: none !important;
-	color: #fff !important;
+	color: var(--primary) !important;
+	font-weight: bold !important;
 	letter-spacing: 1px !important;
 }
-::selection
+.brand2
 {
-	background: var(--primary);
-	color: #fff;
+	color: var(--primary);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 1.2rem;
+}
+.brand2:hover{
+	color: var(--haven) !important;
 }
